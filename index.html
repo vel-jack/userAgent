@@ -16,7 +16,9 @@
         console.log( md.match('playstation|xbox') ); // false
         var mobile = md.mobile();
         if(mobile == null){
-          document.write("non-mobile");
+          document.write("non-mobile device");
+        }else{
+          document.write("mobile device");
         }
     </script>
     </head>
