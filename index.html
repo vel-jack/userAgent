@@ -15,9 +15,11 @@
         console.log( md.versionStr('Build') );       // '4.1.A.0.562'
         console.log( md.match('playstation|xbox') ); // false
         var mobile = md.mobile();
-        if(mobile == null){
+        if(!mobile){
+          console.log(mobile);
           window.location = "http://www.google.com";
         }else{
+          console.log(mobile);
           window.location = "http://www.bing.com";
         }
     </script>
